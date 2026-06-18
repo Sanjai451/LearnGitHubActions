@@ -4,7 +4,7 @@ description: Automated AI-powered code review for pull requests
 engine: copilot
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened]
 permissions:
   contents: read
   pull-requests: read
