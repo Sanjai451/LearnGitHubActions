@@ -27,4 +27,11 @@ public class HomeController {
                          @RequestParam int b) {
         return "Diff : " + homeService.subNumber(a, b);
     }
+
+    @GetMapping("/diff")
+    public String multipleNum(@RequestParam int a,
+                         @RequestParam int b) {
+        return "Product : " + (a * b);
+    }
+
 }
