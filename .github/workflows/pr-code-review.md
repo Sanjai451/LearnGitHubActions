@@ -1,6 +1,9 @@
 ---
 emoji: 🔍
 description: Automated AI-powered code review for pull requests
+engine: copilot
+vars:
+  GH_AW_MODEL_AGENT_COPILOT: gpt-5-mini
 on:
   pull_request:
     types: [opened, synchronize]
