@@ -1,7 +1,12 @@
 ---
 emoji: 🔍
 description: Automated AI-powered code review for pull requests
-engine: copilot
+
+engine:
+  id: copilot
+  env:
+    COPILOT_MODEL: gpt-4o
+
 on:
   pull_request:
     types: [opened]
