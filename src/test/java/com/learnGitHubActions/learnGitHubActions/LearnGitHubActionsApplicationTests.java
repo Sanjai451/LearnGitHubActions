@@ -20,4 +20,13 @@ class LearnGitHubActionsApplicationTests {
 		Assertions.assertTrue(result.contains(actual));
 	}
 
+	@Test
+	void sampleTest2() {
+
+		String result = homeController.diffNum(100, 20);
+		String actual = "80";
+
+		Assertions.assertTrue(result.contains(actual));
+	}
+
 }

@@ -21,4 +21,10 @@ public class HomeController {
                          @RequestParam int b) {
         return "Sum : " + homeService.addNumber(a, b);
     }
+
+    @GetMapping("/diff")
+    public String diffNum(@RequestParam int a,
+                         @RequestParam int b) {
+        return "Diff : " + homeService.subNumber(a, b);
+    }
 }
