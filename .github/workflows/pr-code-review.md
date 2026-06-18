@@ -9,7 +9,7 @@ engine:
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, synchronize]
 permissions:
   contents: read
   pull-requests: read
