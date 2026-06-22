@@ -28,4 +28,11 @@ public class HomeController {
                          @RequestParam int b) {
         return "Diff : " + homeService.subNumber(a, b);
     }
+
+    // return the divider of two numbers
+    @GetMapping("/div")
+    public String divNum(@RequestParam int a,
+                         @RequestParam int b) {
+        return "Div : " + (a / b);
+    }
 }
